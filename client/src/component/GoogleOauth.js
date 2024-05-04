@@ -71,7 +71,7 @@ const GoogleOauth = () => {
         };
   return (
     <div className="G">
-    <GoogleOAuthProvider clientId={process.env.REACT_APP_GOOGLE_CLIENT_ID}>
+    <GoogleOAuthProvider clientId={id}>
       <div className="G1">
         <GoogleLogin onSuccess={responseMessage} onError={errorMessage} />
       </div>
